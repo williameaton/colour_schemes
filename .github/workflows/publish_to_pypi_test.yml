@@ -8,14 +8,14 @@ on:
     - '*'
 
 jobs:
-  deploy_-to-Pypi:
-    name: Build distributions to TestPyPI
+  build-n-publish:
+    name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.9"]
     permissions:
-      id-token: write  # IMPORTANT: this permission is mandatory for PyPI trusted according to lsawade
+      id-token: write  # IMPORTANT: this permission is mandatory for PyPI trusted
 
   - steps:
       - name: Start actions
