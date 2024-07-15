@@ -3,6 +3,9 @@ on:
   push:
     tags:
     - '*'
+  pull_request:
+    tags:
+    - '*'
 
 jobs:
   deploy_to_Pypi:
