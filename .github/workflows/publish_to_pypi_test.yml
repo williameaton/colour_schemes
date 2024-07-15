@@ -8,7 +8,7 @@ on:
     - '*'
 
 jobs:
-  deploy_to_Pypi:
+  deploy_-to-Pypi:
     name: Build distributions to TestPyPI
     runs-on: ubuntu-latest
     strategy:
